@@ -370,10 +370,12 @@ end
 -- Save the old handlers in case someone wants to restore them
 BugGrabber.oldset = ScriptErrors_Message.SetText
 BugGrabber.oldshow = ScriptErrors.Show
+BugGrabber.olderrorhandler = geterrorhandler()
 
 -- Set up the new handlers
 ScriptErrors_Message.SetText = BugGrabber.GrabError
 ScriptErrors.Show = function() end
+seterrorhandler = function() end
 
 -- Now register for our needed events
 f:RegisterEvent("ADDON_LOADED")
