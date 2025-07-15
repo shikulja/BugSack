@@ -76,3 +76,11 @@ L:RegisterTranslations("deDE", function()
 		["Click to open the BugSack frame with the last error."] = "Klicken zum \195\182ffnen des BugSack Fensters mit dem letzten Fehler.",
 	}
 end)
+
+if ( GetLocale() == "deDE" ) then
+	-- XML buttons
+	BugSackNextButton:SetText("Next")
+	BugSackLastButton:SetText("Last")
+	BugSackPrevButton:SetText("Previous")
+	BugSackFirstButton:SetText("First")
+end

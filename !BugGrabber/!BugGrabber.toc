@@ -3,6 +3,7 @@
 ## Title-koKR: |CFF99FF99B|CFFFFFFFFug|CFF99FF99G|CFFFFFFFFrabber
 ## Version: 2.1.1
 ## Notes: Grabs bugs for the bug sack.
+## Notes-ruRU: Захватывает ошибки для BugSack.
 ## Author: Fritti, Rabbit
 ## X-Credits: Rowne, Ramble, kergoth, ckknight
 ## SavedVariables: BugGrabberDB

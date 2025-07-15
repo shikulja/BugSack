@@ -30,6 +30,17 @@ if GetLocale() == "deDE" then
 	UNIQUE_CAPTURE = "BugGrabber hat einen einzigartigen error aufgezeichnet:\n%s\n---"
 end
 
+if GetLocale() == "ruRU" then
+	USAGE = "Использование: /buggrabber <номер>."
+	ERROR_INDEX = "Указанный индекс должен быть числом."
+	ERROR_UNKNOWN_INDEX = "Индекс %d отсутствует в таблице ошибок загрузки."
+	STARTUP_ERRORS = "Обнаружено %d ошибок при запуске:"
+	STARTUP_ERRORS_MANY = "Обнаружено %d ошибок при запуске, используйте /buggrabber <номер> для просмотра."
+	UNIQUE_CAPTURE = "BugGrabber зафиксировал уникальную ошибку:\n%s\n---"
+	ADDON_CALL_PROTECTED = "[%s] Аддон '%s' попытался вызвать защищённую функцию '%s'."
+	ADDON_CALL_PROTECTED_MATCH = "^%[(.*)%] (Аддон '.*' попытался вызвать защищённую функцию '.*'.)$"
+end
+
 -- Create our event registering frame
 local f = CreateFrame("Frame", "BugGrabber")
 
